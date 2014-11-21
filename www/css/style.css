@@ -1,18 +1,18 @@
 /* Empty. Add your own CSS if you like */
 
-.bar.bar-ext  {
+.bar-ext  {
     height: 100px;
 }
 
-.bar.bar-ext .right-buttons  {
+.bar-ext .right-buttons  {
     height: 43px;
 }
 
-.bar.bar-ext.de-ext  {
+.bar-ext.de-ext  {
     height: 44px;
 }
 
-.bar.bar-ext .search  {
+.bar-ext .search  {
     position: relative;
     top: 48px;
     width: calc(100% - 0px);
@@ -53,10 +53,21 @@
     margin: 0;
 }
 
-.de-ext .search  {
-    opacity: 0;
-}
 
 .has-header.ext-header  {
     top: 100px;
+}
+
+.bar-ext.hidden .search  {
+    opacity: 0;
+}
+
+.bar-ext.hidden  {
+    /*top: -58px;*/
+    transform: translate(0,-58px);
+}
+
+.bar-ext  {
+    transition: top 2s ease-in-out;
+    -webkit-transition: top 2s ease-in-out;
 }

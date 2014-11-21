@@ -23,20 +23,12 @@
     </head>
     <body ng-app="starter" ng-controller="AppCtrl as app">
 
-        <fp-nav-bar class="bar-stable bar-ext de-ext" ng-class="{'de-ext': !app.search}">
+        <ion-nav-bar class="bar-stable">
             <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
                 Back
             </ion-nav-back-button>
 
-            <div class="search hidden">
-                <form ng-submit="search()">
-                    <label class="search-wrapper">
-                        <input type="text" placeholder="Search" class="search-input" ng-model="query.q">
-                        <button class="icon ion-ios7-barcode-outline barcode" ng-click="scan_barcode()"></button>
-                    </label>
-                </form>
-            </div>
-        </fp-nav-bar>
+        </ion-nav-bar>
 
         <ion-nav-view></ion-nav-view>
     </body>

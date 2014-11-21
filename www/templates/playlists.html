@@ -6,6 +6,16 @@
   <ion-nav-buttons side="right">
     <button ng-click="app.toggle_search()" class="button button-icon icon ion-ios7-search"></button>
   </ion-nav-buttons>
+  <div class="bar bar-ext hidden" ng-class="{'hidden': !app.search}">
+    <div class="search">
+      <form ng-submit="search()">
+        <label class="search-wrapper">
+          <input type="text" placeholder="Search" class="search-input" ng-model="query.q">
+          <button class="icon ion-ios7-barcode-outline barcode" ng-click="scan_barcode()"></button>
+        </label>
+      </form>
+    </div>
+  </div>
   <ion-content class="has-header" ng-class="{'ext-header': app.search}">
     <!-- <form ng-submit="search()" class="item item-input-inset" ng-show="app.search">
         <label class="item-input-wrapper">

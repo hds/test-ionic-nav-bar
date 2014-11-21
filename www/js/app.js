@@ -62,7 +62,11 @@ app.controller('AppCtrl', function($scope) {
         { title: 'Dubstep', id: 3 },
         { title: 'Indie', id: 4 },
         { title: 'Rap', id: 5 },
-        { title: 'Cowbell', id: 6 }
+        { title: 'Cowbell', id: 6 },
+        { title: 'Rock', id: 7 },
+        { title: 'Pop', id: 8 },
+        { title: 'Heavy Metal', id: 9 },
+        { title: 'Electro', id: 10 }
     ];
 
     self.search = false;
