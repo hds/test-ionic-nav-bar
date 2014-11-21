@@ -1,0 +1,79 @@
+## Cordova
+platforms/ios/www
+platforms/ios/.staging
+platforms/android/assets/www
+platforms/android/.staging
+platforms/ios/cordova/console.log
+
+## Bower
+bower_components
+
+## NPM
+node_modules
+
+## SASS / SCSS
+.sass-cache
+
+## Xcode
+*~.nib
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+xcuserdata
+*.moved-aside
+
+## Android
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+ant-build/
+ant-gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+## Eclipse
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath

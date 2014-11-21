@@ -1,0 +1,62 @@
+/* Empty. Add your own CSS if you like */
+
+.bar.bar-ext  {
+    height: 100px;
+}
+
+.bar.bar-ext .right-buttons  {
+    height: 43px;
+}
+
+.bar.bar-ext.de-ext  {
+    height: 44px;
+}
+
+.bar.bar-ext .search  {
+    position: relative;
+    top: 48px;
+    width: calc(100% - 0px);
+    /*width: auto;*/
+    /*padding: 0 4px;*/
+}
+
+.search .search-wrapper  {
+    border: 1px solid #1c3e8e;
+    /*margin: 0 4px;*/
+    width: 100%;
+    /*height:*/
+    display: inline-block;
+    background: none #fff;
+    padding: 0 12px;
+    /*padding-right: 20px;*/
+}
+
+.search .search-input  {
+    width: calc(100% - 50px);
+    /*width: auto;*/
+    display: inline-block;
+    margin-bottom: 4px;
+    height: 26px;
+}
+
+.search .barcode  {
+    display: inline-block;
+    position: relative;
+
+    font-size: 18px;
+    background: none transparent;
+    border: none;
+
+    height: auto;
+    width: 40px;
+    top: 2px;
+    margin: 0;
+}
+
+.de-ext .search  {
+    opacity: 0;
+}
+
+.has-header.ext-header  {
+    top: 100px;
+}
