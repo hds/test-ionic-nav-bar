@@ -1,18 +1,18 @@
 <ion-view title="Playlists">
-  <!-- <ion-nav-buttons side="left">
-    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-    <button ng-click="mog()" class="button button-icon icon ion-gear-b"></button>
-  </ion-nav-buttons> -->
   <ion-nav-buttons side="right">
-    <button ng-click="app.toggle_search()" class="button button-icon icon ion-ios7-search"></button>
+    <button ng-click="ctrl.toggle_search()" class="button button-icon icon ion-ios7-search"></button>
   </ion-nav-buttons>
-  <ion-content class="has-header" ng-class="{'ext-header': app.search}">
-    <!-- <form ng-submit="search()" class="item item-input-inset" ng-show="app.search">
-        <label class="item-input-wrapper">
-        <input type="text" placeholder="Search" ng-model="query.q">
-      </label>
-      <button class="button button-small icon ion-ios7-barcode-outline" ng-click="scan_barcode()"></button>
-    </form> -->
+  <div class="bar bar-ext de-ext" ng-class="{'de-ext': !ctrl.search}">
+    <div class="search">
+      <form ng-submit="search()">
+        <label class="search-wrapper">
+          <input type="text" placeholder="Search" class="search-input" ng-model="query.q">
+          <button class="icon ion-ios7-barcode-outline barcode" ng-click="scan_barcode()"></button>
+        </label>
+      </form>
+    </div>
+  </div>
+  <ion-content class="has-header" ng-class="{'ext-header': ctrl.search}">
     <ion-list>
       <ion-item ng-repeat="playlist in app.playlists" href="#/app/playlists/{{playlist.id}}">
         {{playlist.title}}

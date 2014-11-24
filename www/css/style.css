@@ -1,21 +1,26 @@
 /* Empty. Add your own CSS if you like */
 
-.bar.bar-ext  {
+.bar-ext  {
     height: 100px;
+    top: 0px;
+    background: none #f8f8f8;
+
+    overflow: hidden;
 }
 
-.bar.bar-ext .right-buttons  {
+.bar-ext .right-buttons  {
     height: 43px;
 }
 
-.bar.bar-ext.de-ext  {
+.bar-ext.de-ext  {
     height: 44px;
 }
 
-.bar.bar-ext .search  {
+.bar-ext .search  {
     position: relative;
     top: 48px;
     width: calc(100% - 0px);
+    opacity: 1;
     /*width: auto;*/
     /*padding: 0 4px;*/
 }
@@ -53,10 +58,18 @@
     margin: 0;
 }
 
-.de-ext .search  {
-    opacity: 0;
-}
 
 .has-header.ext-header  {
     top: 100px;
+}
+
+.bar-ext.de-ext .search  {
+    opacity: 0;
+}
+
+.bar-ext,
+.has-header,
+.bar-ext .search  {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
 }
