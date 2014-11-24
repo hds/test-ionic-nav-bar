@@ -2,6 +2,10 @@
 
 .bar-ext  {
     height: 100px;
+    top: 0px;
+    background: none #f8f8f8;
+
+    overflow: hidden;
 }
 
 .bar-ext .right-buttons  {
@@ -16,6 +20,7 @@
     position: relative;
     top: 48px;
     width: calc(100% - 0px);
+    opacity: 1;
     /*width: auto;*/
     /*padding: 0 4px;*/
 }
@@ -58,16 +63,13 @@
     top: 100px;
 }
 
-.bar-ext.hidden .search  {
+.bar-ext.de-ext .search  {
     opacity: 0;
 }
 
-.bar-ext.hidden  {
-    /*top: -58px;*/
-    transform: translate(0,-58px);
-}
-
-.bar-ext  {
-    transition: top 2s ease-in-out;
-    -webkit-transition: top 2s ease-in-out;
+.bar-ext,
+.has-header,
+.bar-ext .search  {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
 }
