@@ -6,6 +6,8 @@
     background: none #f8f8f8;
 
     overflow: hidden;
+
+    z-index: 8;
 }
 
 .bar-ext .right-buttons  {
@@ -69,7 +71,40 @@
 
 .bar-ext,
 .has-header,
-.bar-ext .search  {
+.bar-ext .search,
+.fp-menu  {
     transition: all 0.3s;
-    -webkit-transition: all 0.3s;
+}
+
+
+.fp-menu  {
+    /*background: #93f;*/
+    background: #fff;
+    border: 1px solid #999;
+
+    position: absolute;
+    width: 280px;
+    max-width: 90%;
+    padding: 60px 20px 20px 20px;
+
+    top: 0px;
+    left: 20px;
+    /*bottom: 20px;*/
+
+    z-index: 6;
+
+    transition: top 0.4s, transform 0.3s;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.fp-menu li  {
+    margin: 8px 0;
+}
+
+.fp-menu.de-ext  {
+    top: -240px;
+}
+
+.fp-menu.ext-header  {
+    transform: translate(0,58px);
 }

@@ -80,6 +80,12 @@ app.controller('PlaylistListCtrl', function()  {
         console.log('search: ' + self.search + ' --> ' + !self.search);
         self.search = ! self.search;
     };
+
+    self.menu = false;
+    self.toggle_menu = function()  {
+        console.log('menu: ' + self.menu + ' --> ' + !self.menu);
+        self.menu = ! self.menu;
+    };
 });
 
 app.controller('PlaylistDetailCtrl', function($stateParams) {

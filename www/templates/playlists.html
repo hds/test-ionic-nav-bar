@@ -2,6 +2,9 @@
   <ion-nav-buttons side="right">
     <button ng-click="ctrl.toggle_search()" class="button button-icon icon ion-ios7-search"></button>
   </ion-nav-buttons>
+  <ion-nav-buttons side="left">
+    <button ng-click="ctrl.toggle_menu()" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
   <div class="bar bar-ext de-ext" ng-class="{'de-ext': !ctrl.search}">
     <div class="search">
       <form ng-submit="search()">
@@ -11,6 +14,15 @@
         </label>
       </form>
     </div>
+  </div>
+  <div class="fp-menu de-ext" ng-class="{'de-ext': !ctrl.menu, 'ext-header': ctrl.search}">
+    <h4>Menu thingy</h4>
+    <ul>
+      <li><a href="#">Your Account</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Store Locator</a></li>
+      <li><a href="#">Freebies</a></li>
+    </ul>
   </div>
   <ion-content class="has-header" ng-class="{'ext-header': ctrl.search}">
     <ion-list>
